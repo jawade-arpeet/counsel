@@ -20,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("min-h-screen antialiased", fontSerif.className)}>
+      <body
+        className={cn(
+          "min-h-screen antialiased bg-background",
+          fontSerif.className,
+        )}
+      >
         {children}
       </body>
     </html>
